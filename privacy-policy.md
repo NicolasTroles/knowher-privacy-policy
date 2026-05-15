@@ -1,7 +1,7 @@
 # Política de Privacidade — KnowHer
 
-**Última atualização:** 10 de maio de 2026
-**Versão:** 1.0
+**Última atualização:** 14 de maio de 2026
+**Versão:** 1.1
 
 ---
 
@@ -66,6 +66,9 @@ Ao utilizar o KnowHer, você fornece os seguintes dados:
 | Identificador de conta vinculada | Endereço de e-mail, nome e foto do perfil Google ou Apple | Apenas se você optar por vincular uma conta |
 | Dados técnicos | Versão do Aplicativo, sistema operacional, idioma do dispositivo, fuso horário | Automaticamente |
 | Logs de erro | Mensagens de erro técnicas, *stack traces* | Automaticamente, em caso de falha |
+| Eventos de uso | Telas visitadas, ações executadas (ex: "data adicionada", "conta vinculada"), associados ao UID | Automaticamente, via PostHog (ver Seção 7) |
+
+**Importante sobre eventos de uso:** os eventos coletados **não incluem o conteúdo** dos dados (não enviamos nomes, datas de menstruação, datas importantes, etc. para o PostHog). Apenas a ocorrência de ações e identificadores técnicos. A finalidade é entender padrões de uso agregados e diagnosticar problemas de produto.
 
 ### 4.3. Dados que **não** coletamos
 
@@ -131,6 +134,7 @@ Os únicos terceiros com acesso técnico aos dados são:
 | Google LLC (Firebase) | Armazenamento e autenticação | Brasil + EUA (eventual) | https://firebase.google.com/support/privacy |
 | Google LLC (OAuth) | Autenticação opcional via Google Sign-In | EUA | https://policies.google.com/privacy |
 | Apple Inc. (Sign in with Apple) | Autenticação opcional via Apple | EUA | https://www.apple.com/legal/privacy/ |
+| PostHog, Inc. | Analytics de produto (eventos de uso e tela, sem conteúdo) | EUA | https://posthog.com/privacy |
 
 **Compartilhamento por exigência legal:** dados poderão ser compartilhados com autoridades públicas mediante ordem judicial, ofício ou determinação legal expressa, na forma do art. 23 da LGPD.
 
